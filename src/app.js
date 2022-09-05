@@ -63,14 +63,10 @@ const validateInput = (expression, input, field) => {
   }
 };
 
-// For each input pass the validateForm function
-
 inputs.forEach(input => {
   input.addEventListener("keyup", validateForm);
   input.addEventListener("blur", validateForm);
 });
-
-// Form submit event listener
 
 form.addEventListener("submit", e => {
   e.preventDefault();
